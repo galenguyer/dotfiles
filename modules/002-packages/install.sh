@@ -13,9 +13,9 @@ packages=(
     # CLI tools
     "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" 
     # Programming languages
-     "python" "go"
+     "python" "go" "rust"
     # Utilities
-    "rsync" "rclone" "docker" "docker-compose"
+    "rsync" "rclone" "docker" "docker-compose" "man-db"
     # Build Tools
     "make"
     # Microsoft build of vscode :(
@@ -30,20 +30,20 @@ packages=(
 if [ "$DOT_OS" == "linux_arch" ]; then
     log info updating all packages
     sudo pacman -Syu
-    if [[ ! -x "$(command -v yay)" ]]; then
-        log info yay not found, building and installing from aur
+    if [[ ! -x "$(command -v paru)" ]]; then
+        log info paru not found, building and installing from aur
         pwd=$(pwd)
         echo $pwd
         tmpdir=$(mktemp -d)
         cd $tmpdir
-        git clone https://aur.archlinux.org/yay.git
-        cd yay
+        git clone https://aur.archlinux.org/paru-bin.git paru
+        cd paru
         makepkg -si --noconfirm
         pacman -Rns $(pacman -Qdtq) 2>/dev/null || true
         cd $pwd
     fi
     log info installing packages
-    yay -Sy --removemake --batchinstall --nocleanmenu --answerdiff None ${packages[*]}
+    paru -Sy --removemake --batchinstall ${packages[*]}
     log info cleaning up after ourselves
-    yay -Rns $(yay -Qdtq) 2>/dev/null || log silly no packages left to clean up
+    paru -Rns $(paru -Qdtq) 2>/dev/null || log silly no packages left to clean up
 fi
