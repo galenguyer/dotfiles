@@ -9,7 +9,7 @@ source $DOT_ROOT/constants.sh
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-for module in $DOT_ROOT/modules/**/install.sh; do
+for module in $DOT_ROOT/modules/**"$*"/install.sh; do
     . $module
 done
 
