@@ -15,7 +15,7 @@ packages=(
     # Programming languages
      "python" "go"
     # Utilities
-    "rsync" "rclone" "docker"
+    "rsync" "rclone" "docker" "docker-compose"
     # Build Tools
     "make"
     # Microsoft build of vscode :(
