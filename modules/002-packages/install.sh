@@ -12,7 +12,7 @@ packages=(
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice"
     # CLI tools
-    "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git"
+    "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate"
     # Programming languages
      "python" "go" "rust"
     # Utilities
@@ -30,7 +30,7 @@ packages=(
 
 if [ "$DOT_OS" == "linux_arch" ]; then
     log info updating all packages
-    sudo pacman -Syu git
+    sudo pacman -Syu
     if [[ ! -x "$(command -v paru)" ]]; then
         log info paru not found, building and installing from aur
         pwd=$(pwd)
@@ -40,7 +40,6 @@ if [ "$DOT_OS" == "linux_arch" ]; then
         git clone https://aur.archlinux.org/paru-bin.git paru
         cd paru
         makepkg -si --noconfirm
-        pacman -Rns $(pacman -Qdtq) 2>/dev/null || true
         cd $pwd
     fi
     log info installing packages
