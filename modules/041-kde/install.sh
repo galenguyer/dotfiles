@@ -5,7 +5,8 @@ DOT_MODULE="kde"
 log info setting kde configs
 
 log silly "linking konsole configurations"
-ln -s -f "$DOT_ROOT/modules/041-kde/konsole" "$HOME/.local/share/konsole/konsole"
+rm -r "$HOME/.local/share/konsole"
+ln -s "$DOT_ROOT/modules/041-kde/konsole" "$HOME/.local/share/konsole"
 
 log silly "linking ~/.config/kdedefaults"
 rm -r "$HOME/.config/kdedefaults"
