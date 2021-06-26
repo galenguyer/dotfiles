@@ -17,31 +17,31 @@ ln -s "$DOT_ROOT/modules/040-zsh/.zshrc" "$HOME/.zshrc"
 
 log info adding zsh plugins
 log silly adding zsh-users/zsh-completions
-if [[ ! -d "$HOME/.oh-my-zsh/plugins/custom/zsh-completions" ]]; then
-    git clone https://github.com/zsh-users/zsh-completions "$HOME/.oh-my-zsh/plugins/custom/zsh-completions"
+if [[ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-completions" ]]; then
+    git clone https://github.com/zsh-users/zsh-completions "$HOME/.oh-my-zsh/custom/plugins/zsh-completions"
 else
     pwd=$(pwd)
-    cd "$HOME/.oh-my-zsh/plugins/custom/zsh-completions"
+    cd "$HOME/.oh-my-zsh/custom/plugins/zsh-completions"
     git pull
     cd $pwd
 fi
 
 log silly adding zsh-users/zsh-autosuggestions
-if [[ ! -d "$HOME/.oh-my-zsh/plugins/custom/zsh-autosuggestions" ]]; then
-    git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.oh-my-zsh/plugins/custom/zsh-autosuggestions"
+if [[ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 else
     pwd=$(pwd)
-    cd "$HOME/.oh-my-zsh/plugins/custom/zsh-autosuggestions"
+    cd "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
     git pull
     cd $pwd
 fi
 
 log silly adding zsh-users/zsh-syntax-highlighting
-if [[ ! -d "$HOME/.oh-my-zsh/plugins/custom/zsh-syntax-highlighting" ]]; then
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting "$HOME/.oh-my-zsh/plugins/custom/zsh-syntax-highlighting"
+if [[ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 else
     pwd=$(pwd)
-    cd "$HOME/.oh-my-zsh/plugins/custom/zsh-syntax-highlighting"
+    cd "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
     git pull
     cd $pwd
 fi
