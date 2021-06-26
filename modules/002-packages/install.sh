@@ -7,8 +7,8 @@ packages=(
     "zsh"
     # Extras
     "gnu-free-fonts" "atomicparsley"
-    # XFCE
-    xfce4 xfce4-goodies lightdm lightdm-greeter-gtk
+    # KDE
+    "plasma" "kde-applications" "xorg"
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice"
     # CLI tools
