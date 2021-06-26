@@ -10,7 +10,7 @@ packages=(
     # KDE
     "plasma" "xorg" "kde-applications"
     # Base apps
-    "firefox-developer-edition" "thunderbird" "discord"
+    "firefox-developer-edition" "thunderbird" "discord" "libreoffice"
     # CLI tools
     "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git"
     # Programming languages
