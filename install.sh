@@ -14,8 +14,8 @@ fi
 
 if [ "$1" = "dots" ]; then
     log info "installing only dots"
-    dots=("zsh" "git")
-    for dot in $dots; do
+    dots=("bash" "zsh" "git")
+    for dot in ${dots[@]}; do
         for module in $DOT_ROOT/modules/**"$dot"/install.sh; do
             . $module
         done
