@@ -8,7 +8,7 @@ packages=(
     # Extras
     "gnu-free-fonts" "atomicparsley"
     # KDE
-    "plasma" "kde-applications" "xorg"
+    "plasma" "kde-applications" "xorg" "lightdm" "lightdm-webkit2-greeter" "lightdm-webkit-theme-litarvan"
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice"
     # CLI tools
