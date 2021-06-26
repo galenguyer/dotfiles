@@ -8,7 +8,7 @@ packages=(
     # Extras
     "gnu-free-fonts" "atomicparsley"
     # KDE
-    "plasma" "kde-applications" "xorg" "lightdm" "lightdm-webkit2-greeter" "lightdm-webkit-theme-litarvan"
+    "plasma" "kde-applications" "xorg"
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice"
     # CLI tools
@@ -21,7 +21,7 @@ packages=(
     "make"
     # Microsoft build of vscode :(
     # Needed for live share
-    # Microsoft poopy   
+    # Microsoft poopy
     "visual-studio-code-bin"
 )
 
