@@ -1,0 +1,14 @@
+[user]
+        name = Galen Guyer
+        email = galen@galenguyer.com
+        signingkey = 038CCBF3DAD6946AF5ECC4F9B00B5AAA0E096100
+[pull]
+	rebase = true
+[commit]
+        gpgsign = true
+[gpg]
+        program = gpg2
+[alias]
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+[init]
+	defaultBranch = main
