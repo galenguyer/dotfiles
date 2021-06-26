@@ -7,8 +7,8 @@ packages=(
     "zsh"
     # Extras
     "gnu-free-fonts" "atomicparsley"
-    # KDE
-    "plasma" "xorg" "kde-applications"
+    # XFCE
+    xfce4 xfce4-goodies lightdm lightdm-greeter-gtk
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice"
     # CLI tools
@@ -44,7 +44,5 @@ if [ "$DOT_OS" == "linux_arch" ]; then
         cd $pwd
     fi
     log info installing packages
-    paru -Sy --removemake --batchinstall ${packages[*]}
-    log info cleaning up after ourselves
-    paru -Rns $(paru -Qdtq) 2>/dev/null || log silly no packages left to clean up
+    paru -S --removemake --batchinstall ${packages[*]}
 fi
