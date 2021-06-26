@@ -4,14 +4,15 @@ source $DOT_ROOT/lib/os.sh
 DOT_MODULE="packages"
 
 packages=(
+    "zsh"
     # Extras
     "gnu-free-fonts" "atomicparsley"
-    # GNOME base
+    # KDE
     "plasma" "xorg" "kde-applications"
     # Base apps
-    "firefox-developer-edition"
+    "firefox-developer-edition" "thunderbird" "discord"
     # CLI tools
-    "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" 
+    "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git"
     # Programming languages
      "python" "go" "rust"
     # Utilities
@@ -29,7 +30,7 @@ packages=(
 
 if [ "$DOT_OS" == "linux_arch" ]; then
     log info updating all packages
-    sudo pacman -Syu
+    sudo pacman -Syu git
     if [[ ! -x "$(command -v paru)" ]]; then
         log info paru not found, building and installing from aur
         pwd=$(pwd)
