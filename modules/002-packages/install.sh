@@ -10,13 +10,14 @@ packages=(
     # KDE
     "plasma" "kde-applications" "xorg"
     # Base apps
-    "firefox-developer-edition" "thunderbird" "discord" "libreoffice"
+    "firefox-developer-edition" "thunderbird" "discord" "libreoffice" "slack-desktop"
     # CLI tools
-    "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate"
+    "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate" "pacaur"
+    "azure-cli" "terraform" "ansible" "git-crypt" "net-tools" "dnsutils"
     # Programming languages
      "python" "go" "rust"
     # Utilities
-    "rsync" "rclone" "docker" "docker-compose" "man-db"
+    "rsync" "rclone" "docker" "docker-compose" "man-db" "wireguard-tools" "openresolv"
     # Build Tools
     "make"
     # Microsoft build of vscode :(
