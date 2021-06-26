@@ -16,6 +16,11 @@ log silly "linking ~/.config/kdeglobals"
 rm -r "$HOME/.config/kdeglobals"
 ln -s "$DOT_ROOT/modules/041-kde/.config/kdeglobals" "$HOME/.config/kdeglobals"
 
+log silly "linking ~/.config/kcminputrc"
+rm -r "$HOME/.config/kcminputrc"
+ln -s "$DOT_ROOT/modules/041-kde/.config/kcminputrc" "$HOME/.config/kcminputrc"
+
 log silly "linking ~/.kde4"
 rm -r "$HOME/.kde4"
 ln -s "$DOT_ROOT/modules/041-kde/.kde4" "$HOME/.kde4"
+
