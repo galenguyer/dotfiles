@@ -3,7 +3,7 @@
 # Keep it minimal
 
 [ ! $DOT_SPLASH ] \
-    && echo -en "\n \x1b[30;44m \x1b[0m .dotfiles\n \x1b[30;44m \x1b[0m version 5\n\n" \
+    && echo -en "\n \x1b[30;44m \x1b[0m .dotfiles\n \x1b[30;44m \x1b[0m version 1\n\n" \
     && export DOT_SPLASH=1
 
 # Logs
