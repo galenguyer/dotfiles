@@ -6,7 +6,7 @@ DOT_MODULE="packages"
 packages=(
     "zsh"
     # Extras
-    "gnu-free-fonts" "atomicparsley"
+    "gnu-free-fonts" "atomicparsley" "noto-fonts-cjk" "noto-fonts" "noto-fonts-emoji"
     # KDE
     "plasma" "kde-applications" "xorg"
     # Base apps
@@ -18,6 +18,7 @@ packages=(
      "python" "go" "rust"
     # Utilities
     "rsync" "rclone" "docker" "docker-compose" "man-db" "wireguard-tools" "openresolv"
+    "asdf-vm" "python-pip"
     # Build Tools
     "make"
     # Microsoft build of vscode :(
