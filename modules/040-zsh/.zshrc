@@ -142,3 +142,13 @@ agentize() {
 if [ -f $HOME/.acme.sh/acme.sh.env ]; then
     . "$HOME/.acme.sh/acme.sh.env"
 fi
+
+# if asdf is installed, source it
+if [ -d /opt/asdf-vm ]; then
+    . /opt/asdf-vm//asdf.sh
+fi
+
+# PATH fixes
+# pipx
+PATH="$PATH:/home/chef/.local/bin"
+
