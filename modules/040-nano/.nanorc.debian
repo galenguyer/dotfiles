@@ -22,7 +22,7 @@
 # set autoindent
 
 ## Back up files to the current filename plus a tilde.
-set backup
+# set backup
 
 ## The directory to put unique backup files in.
 # set backupdir ""
@@ -39,7 +39,7 @@ set backup
 # set brackets ""')>]}"
 
 ## Automatically hard-wrap the current line when it becomes overlong.
-set breaklonglines
+# set breaklonglines
 
 ## Do case-sensitive searches by default.
 # set casesensitive
@@ -76,7 +76,7 @@ set linenumbers
 # set locking
 
 ## Fall back to slow libmagic to try and determine an applicable syntax.
-set magic
+# set magic
 
 ## The opening and closing brackets that can be found by bracket
 ## searches.  They cannot contain blank characters.  The former set must
@@ -204,14 +204,10 @@ set trimblanks
 
 ## Paint the interface elements of nano.  These are examples; there are
 ## no colors by default, except for errorcolor and spotlightcolor.
-set titlecolor bold,lightwhite,blue
-set promptcolor lightwhite,lightblack
-set statuscolor bold,lightwhite,green
-set errorcolor bold,lightwhite,red
-set spotlightcolor black,lime
-set selectedcolor lightwhite,magenta
-set stripecolor ,yellow
-set scrollercolor cyan
+set titlecolor white,blue
+set statuscolor white,green
+set errorcolor white,red
+set selectedcolor white,magenta
 set numbercolor cyan
 set keycolor cyan
 set functioncolor green
@@ -247,10 +243,10 @@ include "/usr/share/nano/*.nanorc"
 
 ## If <Tab> should always produce four spaces when editing a Python file,
 ## independent of the settings of 'tabsize' and 'tabstospaces':
-extendsyntax python tabgives "    "
+#extendsyntax python tabgives "    "
 
 ## If <Tab> should always produce an actual TAB when editing a Makefile:
-extendsyntax makefile tabgives "	"
+#extendsyntax makefile tabgives "	"
 
 
 ## === Key bindings ===
