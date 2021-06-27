@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 source $DOT_ROOT/constants.sh
+source $DOT_ROOT/lib/os.sh
 DOT_MODULE="nano"
 
 log info applying nanorc
