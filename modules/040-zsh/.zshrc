@@ -152,3 +152,5 @@ fi
 # pipx
 PATH="$PATH:/home/chef/.local/bin"
 
+# hashicorp vault client stuff
+export VAULT_ADDR="https://secrets.galenguyer.com"
