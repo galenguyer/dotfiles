@@ -19,7 +19,7 @@ packages=(
      "python" "go" "rust"
     # Utilities
     "rsync" "rclone" "docker" "docker-compose" "man-db" "wireguard-tools" "openresolv"
-    "asdf-vm" "python-pip"
+    "asdf-vm" "python-pip" "tmux"
     # Build Tools
     "make"
     # Microsoft build of vscode :(

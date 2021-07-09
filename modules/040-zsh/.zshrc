@@ -119,6 +119,7 @@ alias dcu="docker-compose up -d"
 alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push"
+alias gl="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 # misc aliases
 alias ls="ls --color=auto"
 alias dcl="docker-compose logs"
@@ -130,6 +131,7 @@ alias pls='echo *moan*'
 alias no='clear'
 # kubernetes
 alias k='kubectl'
+complete -F __start_kubectl k
 
 # ssh agent setup
 agentize() {
@@ -149,8 +151,15 @@ if [ -d /opt/asdf-vm ]; then
 fi
 
 # PATH fixes
+# cargo binaries
+export PATH="$PATH:$HOME/.cargo/bin"
+
 # pipx
-PATH="$PATH:/home/chef/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # hashicorp vault client stuff
 export VAULT_ADDR="https://secrets.galenguyer.com"
+
+# ruby and gems
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
