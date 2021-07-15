@@ -13,13 +13,13 @@ packages=(
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice" "slack-desktop" "vlc"
     "spotify"
     # CLI tools
-    "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate" "pacaur"
+    "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate"
     "azure-cli" "terraform" "ansible" "git-crypt" "net-tools" "dnsutils"
     # Programming languages
-     "python" "go" "rust"
+     "python" "go" "rust" "ruby"
     # Utilities
     "rsync" "rclone" "docker" "docker-compose" "man-db" "wireguard-tools" "openresolv"
-    "asdf-vm" "python-pip" "tmux"
+    "asdf-vm" "python-pip" "tmux" "ntfs-3g"
     # Build Tools
     "make"
     # Microsoft build of vscode :(

@@ -129,6 +129,7 @@ alias mcd="take"
 alias daddy='sudo'
 alias pls='echo *moan*'
 alias no='clear'
+alias pacaur="paru"
 # kubernetes
 alias k='kubectl'
 complete -F __start_kubectl k
