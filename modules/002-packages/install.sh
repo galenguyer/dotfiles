@@ -6,7 +6,7 @@ DOT_MODULE="packages"
 packages=(
     "zsh"
     # Extras
-    "gnu-free-fonts" "atomicparsley" "noto-fonts-cjk" "noto-fonts" "noto-fonts-emoji"
+    "gnu-free-fonts" "noto-fonts-cjk" "noto-fonts" "noto-fonts-emoji"
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice" "slack-desktop" "vlc"
     "spotify"
