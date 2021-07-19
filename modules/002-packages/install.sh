@@ -7,6 +7,8 @@ packages=(
     "zsh"
     # Extras
     "gnu-free-fonts" "noto-fonts-cjk" "noto-fonts" "noto-fonts-emoji"
+    # Cinnamon
+    "cinnamon" "xorg" "lightdm" "lightdm-gtk-greeter" "alacritty" "papirus-folders-git" "adapta-gtk-theme"
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice" "slack-desktop" "vlc"
     "spotify"
