@@ -14,7 +14,7 @@ packages=(
     "spotify" "openssh"
     # CLI tools
     "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate"
-    "azure-cli" "terraform" "ansible" "git-crypt" "net-tools" "dnsutils"
+    "azure-cli" "terraform" "ansible" "git-crypt" "net-tools" "dnsutils" "zip" "unzip"
     # Programming languages
      "python" "go" "rust" "ruby"
     # Utilities
