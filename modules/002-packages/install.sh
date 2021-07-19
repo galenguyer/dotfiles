@@ -7,8 +7,6 @@ packages=(
     "zsh"
     # Extras
     "gnu-free-fonts" "atomicparsley" "noto-fonts-cjk" "noto-fonts" "noto-fonts-emoji"
-    # KDE
-    "plasma" "kde-applications" "xorg"
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice" "slack-desktop" "vlc"
     "spotify"
