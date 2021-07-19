@@ -6,9 +6,10 @@ DOT_MODULE="packages"
 packages=(
     "zsh"
     # Extras
-    "gnu-free-fonts" "noto-fonts-cjk" "noto-fonts" "noto-fonts-emoji"
+    "gnu-free-fonts" "noto-fonts-cjk" "noto-fonts" "noto-fonts-emoji" "neofetch" "pfetch"
     # Cinnamon
-    "cinnamon" "xorg" "lightdm" "lightdm-gtk-greeter" "alacritty" "papirus-folders-git" "adapta-gtk-theme"
+    "cinnamon" "xorg" "lightdm" "lightdm-webkit2-greeter" "alacritty" "papirus-folders-git" "adapta-gtk-theme"
+    "arc-gtk-theme" "mint-themes" "mint-y-icons" "hardcode-tray"
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice" "slack-desktop" "vlc"
     "spotify" "openssh"
@@ -16,10 +17,10 @@ packages=(
     "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate"
     "azure-cli" "terraform" "ansible" "git-crypt" "net-tools" "dnsutils" "zip" "unzip"
     # Programming languages
-     "python" "go" "rust" "ruby"
+     "python" "go" "rust" "ruby" "nodejs" "npm"
     # Utilities
     "rsync" "rclone" "docker" "docker-compose" "man-db" "wireguard-tools" "openresolv"
-    "asdf-vm" "python-pip" "tmux" "ntfs-3g"
+    "asdf-vm" "python-pip" "tmux" "ntfs-3g" "flameshot"
     # Build Tools
     "make"
     # Microsoft build of vscode :(

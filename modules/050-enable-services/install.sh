@@ -4,8 +4,10 @@ source $DOT_ROOT/lib/os.sh
 DOT_MODULE="enable-services"
 
 if [ "$DOT_OS" == "linux_arch" ]; then
-#    if pacman -Q sddm &> /dev/null; then
-#        log info "enabling sddm"
-#        sudo systemctl enable sddm
-#    fi
+    if pacman -Q lightdm &> /dev/null; then
+        log info "enabling lightdm"
+        sudo systemctl enable lightdm
+    fi
+    log info "enabling NetworkManager"
+    sudo systemctl enable NetworkManager
 fi
