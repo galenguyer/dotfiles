@@ -11,7 +11,7 @@ packages=(
     "cinnamon" "xorg" "lightdm" "lightdm-gtk-greeter" "alacritty" "papirus-folders-git" "adapta-gtk-theme"
     # Base apps
     "firefox-developer-edition" "thunderbird" "discord" "libreoffice" "slack-desktop" "vlc"
-    "spotify"
+    "spotify" "openssh"
     # CLI tools
     "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate"
     "azure-cli" "terraform" "ansible" "git-crypt" "net-tools" "dnsutils"
