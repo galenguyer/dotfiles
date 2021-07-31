@@ -161,5 +161,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export VAULT_ADDR="https://secrets.galenguyer.com"
 
 # ruby and gems
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-export PATH="$PATH:$GEM_HOME/bin"
+if command -v ruby 2>&1 >/dev/null; then
+    export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+    export PATH="$PATH:$GEM_HOME/bin"
+fi

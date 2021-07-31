@@ -11,7 +11,7 @@ packages=(
     "cinnamon" "xorg" "lightdm" "lightdm-webkit2-greeter" "alacritty" "papirus-folders-git" "adapta-gtk-theme"
     "arc-gtk-theme" "mint-themes" "mint-y-icons" "hardcode-tray"
     # Base apps
-    "firefox-developer-edition" "thunderbird" "discord" "libreoffice" "slack-desktop" "vlc"
+    "firefox-developer-edition" "google-chrome" "thunderbird" "discord" "libreoffice" "slack-desktop" "vlc"
     "spotify" "openssh"
     # CLI tools
     "htop" "ffmpeg" "youtube-dl" "reflector" "ffmpeg" "git" "mlocate"
@@ -20,7 +20,7 @@ packages=(
      "python" "go" "rust" "ruby" "nodejs" "npm"
     # Utilities
     "rsync" "rclone" "docker" "docker-compose" "man-db" "wireguard-tools" "openresolv"
-    "asdf-vm" "python-pip" "tmux" "ntfs-3g" "flameshot"
+    "asdf-vm" "python-pip" "tmux" "ntfs-3g" "flameshot" "kubectl"
     # Build Tools
     "make"
     # Microsoft build of vscode :(

@@ -7,5 +7,3 @@ window:
     x: 8
     y: 8
   dynamic_padding: true
-
-background_opacity: 0.9
