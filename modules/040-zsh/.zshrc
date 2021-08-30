@@ -129,6 +129,8 @@ alias daddy='sudo'
 alias pls='echo "*moan*"'
 alias no='clear'
 alias pacaur="paru"
+alias lolbash='bash -i 2>&1 | lolcat'
+alias keysmash='cat /dev/urandom | env LC_CTYPE=C tr -dc "asdfghjkl;" | fold -w 20 | head -n 1'
 # kubernetes
 alias k='kubectl'
 complete -F __start_kubectl k
