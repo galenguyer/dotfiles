@@ -128,7 +128,6 @@ alias la="ls -lA"
 alias daddy='sudo'
 alias pls='echo "*moan*"'
 alias no='clear'
-alias pacaur="paru"
 alias lolbash='bash -i 2>&1 | lolcat'
 alias keysmash='cat /dev/urandom | env LC_CTYPE=C tr -dc "asdfghjkl;" | fold -w 20 | head -n 1'
 # kubernetes
@@ -158,9 +157,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 # pipx
 export PATH="$PATH:$HOME/.local/bin"
-
-# hashicorp vault client stuff
-export VAULT_ADDR="https://secrets.galenguyer.com"
 
 # ruby and gems
 if command -v ruby 2>&1 >/dev/null; then
