@@ -76,5 +76,6 @@ Plug 'dracula/vim',{'as':'dracula'}
 Plug 'wakatime/vim-wakatime'
 Plug 'preservim/nerdtree'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
