@@ -104,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 ZSH_THEME_GIT_PROMPT_PREFIX=" git:("
 ZSH_THEME_GIT_PROMPT_SUFFIX=")"
 
-PROMPT='%{$fg[yellow]%}%n%{$reset_color%}@%{$FG[033]%}%M%{$reset_color%}:%{$fg[green]%}%~%{$reset_color%}$(git_prompt_info)%(!.#.$) '
+PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$FG[033]%}%M%{$reset_color%}:%{$fg[green]%}%~%{$reset_color%}$(git_prompt_info)%(!.#.$) '
 
 export EDITOR=vim
 export GPG_TTY=$(tty)
